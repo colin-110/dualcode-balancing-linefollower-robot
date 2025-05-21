@@ -1,11 +1,8 @@
-# Line-Following Robot with Balancing Platform
+# Line-Following Balancing Robot
 
-A dual-core ESP32-based robot that follows a line using infrared sensors while balancing a platform on top using MPU6500 sensor input and a servo motor. This project demonstrates multi-core task scheduling, real-time balancing, and embedded system integration.
+An ESP32-based robot that follows a line using IR sensors while balancing a platform using MPU6500 and a servo. Uses multi-core tasks to manage movement and stabilization in real time.
 
-##  Features
-
-- Line following using IR sensors (L298N motor driver)
+## Features
+- IR line following
 - MPU6500-based platform balancing
-- Real-time filtering (EMA + Moving Avg + Median)
-- Servo control with angle compensation
-- FreeRTOS task management (Core 0 + Core 1)
+- Dual-core task handling (FreeRTOS)
